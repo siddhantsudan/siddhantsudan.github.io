@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script src="js/jquery-2.1.1.js"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Poiret+One|Rammetto+One" rel="stylesheet">
+	  
+<!--      <script  src="js/effectmain.js"></script> 
+ <script src="js/effectmodernizr.js"></script> -->
+
+	<script src="js/animsition.min.js"></script>
+	<script  src="bootstrap/js/bootstrap.js"></script> 
+	  <link rel="stylesheet" href="css/animsition.css">
+	    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+	     <link href="css/hamburgers.css" rel="stylesheet">
+	       <link rel="stylesheet" href="css/style.css"> 
+	      <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+	           <link rel="stylesheet" href="css/social.css"> 
+
+<!--  <link rel="stylesheet" href="css/effectstyle.css"> Resource style
+  <link rel="stylesheet" href="css/effectreset.css"> -->
+
+	  <script>
+
+    $(document).ready(function(){
+
+// $("#one").height($( window ).height());
+//       $("#one").width($( document).width());
+$("#hambutton").load("nav.html #mybutton");
+$("#ham").load("nav.html #nav");
+$("#ham").hide();
+
+$("#hambutton").on('click', function(event) {
+ $("#ham").slideToggle( "slow" );
+
+  $("#mybutton").toggleClass('is-active');
+        
+
+});
+
+
+
+
+$(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 2500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: false,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+
+// $('#hambutton').('nav.html');
+
+ });
+</script>
+
+<style type="text/css">
+body{
+overflow-x:hidden;
+	/*overflow-x:hidden;
+	overflow-y:hidden;*/
+	padding:0;
+	margin:0;
+	color:white;
+	
+}
+.animsition,
+.animsition-overlay {
+  position: absolute !important;
+ 
+}
+
+.light
+{
+	/*font-family: "Open Sans", Arial, sans-serif;
+	color:white;*/
+	font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+	
+
+}
+#two
+{
+	/*height:700px;*/
+
+background: #fe8c00; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fe8c00 , #f83600); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fe8c00 , #f83600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+/*h1
+{
+	margin: 0 !important;
+
+	padding:0 !important;
+}*/
+p
+{
+	font-size:25px;
+}
+
+
+
+li
+{
+margin-top:1%;
+list-style: none;
+
+}
+li:hover{
+  /*color:black;*/
+
+}
+a:hover
+{
+  /*text-decoration:none;*/
+  color:black;
+}
+a{
+  color: grey;
+}
+  a:link, a:visited { 
+   
+    text-decoration: none;
+    cursor: auto;
+}
+</style>
+
+</head>
+
+<body >
+
+
+<!-- <div class="animsition" id="mydiv" style="background-color:black;" style="padding:0;margin:0;">
+<p style="color:white;font-size:50px;margin-top: 25%;margin-left: 35%;">Hello Hello Hello Hello </p>	
+
+</div>
+ -->
+
+ <div style="background-color:white;height:40%;z-index:100;position:fixed;width:100%;opacity:1;" id="ham">
+    
+  
+
+   </div>
+
+<div id="hambutton" style="z-index:101;position:absolute;">
+	
+
+</div>
+
+
+<div class="animsition">
+	
+
+
+
+<div class="row" style="background-color:black;background-image:url('img/wall.jpg');z-index:1;background-repeat: no-repeat;height:600px;"  id="one">
+	
+	<!-- <img src="img/wall.jpg" style="width:100%;height:auto;opacity:0.5;" /> -->
+	<!-- <p>Siddhant</p> -->
+<div class="light col-md-12" style="background-color:rgba(0,0,0,0.5);z-index:5;position:relative;height:inherit;width:100%;">
+<h1 style="text-align: center;margin-top:5%;font-family: 'Gloria Hallelujah', cursive;"><B>About The Project</B></h1>
+<!-- <h1 >Siddhant</h1> -->
+<div  style="position:absolute;margin-top:5%;padding-left:10%;padding-right:10%;">
+	
+
+
+<p style="font-size:30px;text-align:justify;">Worked for an  American global financial institution dealing with hedge fund.They are one of the largest alternative asset managers with more than US $ 25 billion in assets under management.My project dealt with writing code for automating the regression testing for interest rate swaps.The goal of the project was to automate the entire work flow right from creation of the trades in the trading system and verifying the cash flows andreference data for the trade.I used Ranorex (graphical user interface test automation framework for testing desktop, web and mobile application) and C#.</p>
+
+
+
+</div>
+		
+	</div>
+
+</div>
+
+	
+
+<div class="row light"  id="two">
+
+<h1 style="text-align: center;margin-top:5%;font-family: 'Gloria Hallelujah', cursive;"><b>Current State Of The Project</b></h1>
+
+<p style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:5%;margin-bottom: 5%;font-size:23px;">In the current state the quality analysts had to manually create trades in the trade routing and management system and then they had to approve and post the trades. After this trade&rsquo;s reference data (data which is static such as ISIN code) would be available in the reference data workstation. At the same time projected cash flows for the trade could be viewed in another application. The quality analysts had to verify whether trade data was available in reference data workstation and whether the project cash flows were made correctly. This had to done for different product types. More than 200 trades had to manually entered and their data had to be verified each time a new release was sent to production (application used by end users).
+
+
+</div>
+
+<div class="row light" id="three" style="background-image:url('img/ex.jpg');background-size:1400px 800px;background-repeat: no-repeat;">
+
+<!-- <h1 style="text-align: center;margin-top:5%;"><b>The Process</b></h1>
+	
+	<p style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:5%;margin-bottom:5%;">I started with automating the trade entry for all the product types.The trade entry also had many different variation one was the simple case in which you create a trade, another case was you unwind (sell it) the trade after creating it and finally you could assign your trade (your position) to someone else. After this I started with the validation part, the lookup for reference data was implemented but validating the cash flows were becoming difficult, as the application which was used to see the cash flows was a legacy application and as a result there were compatibility issues with Ranorex which was not able to work properly. As a result I was able to implement
+a few validations and could not implement all the validations.</p>
+
+
+</div> -->
+
+<div class="light col-md-12"  style="background-color:rgba(0,0,0,0.55);z-index:7;position:relative;height:inherit;width:100%;">
+
+<!-- <h1 >Siddhant</h1> -->
+<div style="margin-top:5%;padding-left:10%;padding-right:10%;">
+	
+<h1 style="text-align: center;margin-top:2%;font-family: 'Gloria Hallelujah', cursive;"><B>The Process</B></h1>
+
+<p style="font-size:25px;text-align:justify;margin-top:5%;margin-bottom:5%;">I started with automating the trade entry for all the product types.The trade entry also had many different variation one was the simple case in which you create a trade, another case was you unwind (sell it) the trade after creating it and finally you could assign your trade (your position) to someone else. After this I started with the validation part, the lookup for reference data was implemented but validating the cash flows were becoming difficult, as the application which was used to see the cash flows was a legacy application and as a result there were compatibility issues with Ranorex which was not able to work properly. As a result I was able to implementa few validations and could not implement all the validations.</p>
+
+
+
+</div>
+		
+	</div>
+
+	</div>
+
+
+	</div>
+  <!-- <div class="animsition" id="mydiv" style="background-color:yellow;">
+    <a href="./page1" class="animsition-link">animsition link 1</a>
+    <a href="./page2" class="animsition-link">animsition link 2</a>
+  </div> -->
+
+</body>
+</html>

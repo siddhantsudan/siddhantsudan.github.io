@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	 <script src="js/jquery-2.1.1.js"></script>
+	
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Poiret+One|Rammetto+One" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
+   <link rel="stylesheet" href="css/animsition.css">
+   <link href="css/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+       <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+	           <link rel="stylesheet" href="css/social.css"> 
+
+	   <script  src="bootstrap/js/bootstrap.js"></script> 
+	   	<script src="js/animsition.min.js"></script>
+
+<script >
+	
+$(document).ready(function(){
+
+$("#hambutton").load("nav.html #mybutton");
+$("#ham").load("nav.html #nav");
+$("#ham").hide();
+
+$("#hambutton").on('click', function(event) {
+ $("#ham").slideToggle( "slow" );
+
+  $("#mybutton").toggleClass('is-active');
+        
+
+});
+
+
+$("#one").height($( window ).height());
+      $("#one").width($( document).width());
+
+$(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 2500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: false,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+
+});
+
+
+
+</script>
+
+<style type="text/css">
+	
+
+	body{
+		overflow-x:hidden;
+	}
+	 .light
+  {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+  }
+  p
+{
+	font-size:25px;
+}
+
+
+
+li
+{
+margin-top:1%;
+list-style: none;
+
+}
+li:hover{
+  /*color:black;*/
+
+}
+a:hover
+{
+  /*text-decoration:none;*/
+  color:black;
+}
+a{
+  color: grey;
+}
+  a:link, a:visited { 
+   
+    text-decoration: none;
+    cursor: auto;
+}
+</style>
+</head>
+<body>
+
+ <div style="background-color:white;height:40%;z-index:100;position:fixed;width:100%;opacity:1;" id="ham">
+     
+
+   </div>
+
+<div id="hambutton" style="z-index:101;position:absolute;">
+	
+
+</div>
+
+<div class="animsition">
+
+<div class="row" id="one" style="background-image:url('img/back.jpeg');background-repeat: no-repeat;background-size: 1300px 800px;z-index:1;" >
+	
+<!-- <div class="col-md-12" style="position:relative;z-index:2;">
+	
+
+
+</div> -->
+<div class="col-md-12">
+	
+
+
+<h1 style="text-align: center;margin-top:25%;font-family: 'Gloria Hallelujah', cursive;color:white;font-size:50px;"><B>About The Project</B></h1>
+
+<span class="glyphicon glyphicon-menu-down" style="margin-left: 50%;font-size:50px;color:white;margin-top:20%;"  ></span>
+
+<!-- 
+<i data-icon="arrow-r"> -->
+
+<!-- <i class="fa fa-chevron-circle-down" style="font-size:48px;color:white;z-index:2;position:absolute;"> -->
+
+<!-- <p style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:5%;margin-bottom: 5%;font-size:23px;color:white;"class="light"   >The requirement of the project
+was to automate the process and generate Navarik inspection invoices from
+Navarik to SAP directly so that the accountant no longer has to manually enter the
+data. This was achieved using Microsoft&rsquo;s BizTalk (used to automate business
+process execution by connecting different systems).</p> -->
+
+<!-- <h1 style="text-align: center;margin-top:5%;font-family: 'Gloria Hallelujah', cursive;color:white"><B>Current State Of The Project</B></h1>
+
+<p class="light" style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:5%;margin-bottom: 5%;font-size:23px;color: white;">In the current state, inspection vendors (3 rd party companies) were billing supply &amp;
+trading unit for providing inspection services for the crude / refined products
+movements via vessels.  The billing was in the form of an invoice, which was
+submitted by inspection companies through the Navarik system (cargo inspection
+management software).  When the billing took place, accounting entries were
+recorded onto supply &amp; trading unit books by creating 3 rd party accounts payable
+to inspection vendor companies. However for one business unit accountants had
+to make manual entries in SAP-FI module (deals with managing financial
+accounting) for calculating the inspection costs.</p> -->
+
+</div>
+</div>
+
+<div class="row" style="background-color: white;">
+	
+	<p style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:5%;margin-bottom: 5%;font-size:23px;color:black;"class="light"   >The requirement of the project
+was to automate the process and generate Navarik(Cargo Inspection Management Software) inspection invoices from
+Navarik to SAP directly so that the accountant no longer has to manually enter the
+data. This was achieved using Microsoft&rsquo;s BizTalk (used to automate business
+process execution by connecting different systems).</p>
+
+</div>
+
+<div class="row" style="background-image:url('img/hy.jpeg');font-family: 'Gloria Hallelujah', cursive;color:white;font-size:50px;text-align: center;">
+
+<div style="margin-top:10%;margin-bottom:10%;">
+	
+
+	
+<b>Current State Of The Project</b>
+
+</div>
+</div>
+
+<div class="row" style="background-color:black;">
+	
+	<p style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:5%;margin-bottom: 5%;font-size:23px;color:white;"class="light"   >In the current state, inspection vendors (3 rd party companies) were billing supply &amp;
+trading unit for providing inspection services for the crude / refined products
+movements via vessels.The billing was in the form of an invoice, which was
+submitted by inspection companies through the Navarik system (cargo inspection
+management software).When the billing took place, accounting entries were
+recorded onto supply &amp; trading unit books by creating 3 rd party accounts payable
+to inspection vendor companies. However for one business unit accountants had
+to make manual entries in SAP-FI module (deals with managing financial
+accounting) for calculating the inspection costs.</p>
+
+</div>
+
+<div class="row" style="background-image:url('img/ph.jpeg');font-family: 'Gloria Hallelujah', cursive;color:white;font-size:50px;text-align: center;">
+	<div style="margin-top:10%;margin-bottom:10%;">
+	
+
+	
+<b>The Process</b>
+
+</div>
+
+</div>
+
+
+<div class="row" style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:3%;margin-bottom: 5%;font-size:23px;color:black;" >
+	
+<p style="text-align: justify;margin-left:5%;padding-right:5%;margin-top:3%;margin-bottom: 5%;font-size:23px;color:black;"class="light" >The invoices from Navarik were fetched by BizTalk and then  internal logic was run to capture different
+fields, which were required by SAP-FI and finally convert the input schema in a
+format, which the SAP-FI system understands.
+</p>
+</div>
+
+</div>
+
+
+</body>
+</html>
