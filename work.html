@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <title></title>
-  
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
  <script src="js/jquery-2.1.1.js"></script>
@@ -267,7 +267,7 @@ onePageScroll(".main", {
    body{
     overflow-x:hidden;
     overflow-y: hidden;
-   /* overflow:hidden;*/
+   
   }
   .light
   {
@@ -338,6 +338,8 @@ onePageScroll(".main", {
 	
 z-index:1;
 position: absolute;
+height: auto;
+min-width: 100%;
 
 /*	min-width:100%;
 	min-height:100%;
@@ -550,7 +552,7 @@ padding-left:0 !important;
 <div class="embed-responsive embed-responsive-16by9" style="z-index:0;position: relative;">
 	
 	<video style="opacity:0.9"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
-	<source src="video/myvideo.mp4" type="video/mp4">
+	<source src="video/myvideo.mp4" type="video/mp4" >
   
     </video>
 
@@ -593,13 +595,13 @@ padding-left:0 !important;
 
                <div class="embed-responsive embed-responsive-16by9" style="z-index:0;position: relative;">
 
-<video style="opacity:0.9"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
-	<source src="video/busy.mp4" type="video/mp4">
+<video style="opacity:0.9;"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
+	<source src="video/busy.mp4" type="video/mp4" >
   
     </video>
 
 
-           <div class="col-md-12 anchor2 light" id="two" style="background-color:rgba(165,42,42,0);">
+           <div class="col-md-12 light" id="two" style="background-color:rgba(165,42,42,0);">
        
       
        <div style="margin-top: 20%;">
@@ -628,7 +630,7 @@ padding-left:0 !important;
     </video>
 
 
-           <div class="col-md-12 anchor3 light" id="three" style="background-color:rgba(0,0,0,0.50);">
+           <div class="col-md-12  light" id="three" style="background-color:rgba(0,0,0,0.50);">
        
        <!--   <a href="#modal-2" class="cd-modal-trigger"  style="font-size:25px;margin-left:50%;color:white;z-index:200;position:relative;">My Button</a> -->
        <div style="margin-top: 20%;">
@@ -637,7 +639,7 @@ padding-left:0 !important;
        <div style="margin-top:5%;text-align: center;">
          
        
-  <a href="work.html#3" onclick="return false;" class=" buttonstyle2"  style="z-index:200;position:relative;">COMING SOON</a>
+  <a href="work.html#3"  class=" buttonstyle2"  style="z-index:200;position:relative;">COMING SOON</a>
   </div>
  </div>
    
