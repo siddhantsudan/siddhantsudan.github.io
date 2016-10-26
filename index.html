@@ -28,6 +28,8 @@ NProgress.configure({ easing: 'ease', speed: 1100 });
 NProgress.start();
 NProgress.done();
 
+$("#first").height($( window ).height());
+      $("#first").width($( document).width());
 
 // $('#first').css('background-color','white');
 
@@ -175,13 +177,35 @@ opacity: 0.3;*/
 #third
 {
 	/*background-color:grey;*/
-	/*height:800px;*/
+	/*heighst:800px;*/
 
 
 }
 #video{
-	z-index:1;
-	position: absolute;
+	/*z-index:1;*/
+
+  position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+-webkit-transform:translateX(-50%) translateY(-50%);
+/*background: url('images/poster.jpg') no-repeat;*/
+background-size: cover;
+ -webkit-transition:1s opacity;
+transition: 1s opacity;
+	/*position: absolute;*/
+
+
+/*max-width:100%;
+height: auto;*/
+
+	/*min-width:100%;
+	min-height: 100%;*/
 
 /*	min-width:100%;
 	min-height:100%;
@@ -330,12 +354,12 @@ p
     </video> -->
 
 
-<div class="embed-responsive embed-responsive-16by9" >
+<div>
 <nav class="navbar navbar-default" id="mynav" style="background:transparent;position:fixed;z-index:4;margin-left:13px;  border-bottom: 0px solid #ccc;height:8.5%; 
 ">
 
 
-	<ul  style="list-style-type: none;position: absolute;margin-left:80%;margin-top:1%;" class="light">
+	<ul  style="list-style-type: none;position: absolute;width:25%;margin-top:1%; right:0px;" class="light">
 		<li><a   href="work.html">Work</a></li>
         <li ><a href="resume.pdf" target="_blank">Resume</a></li>
 
@@ -348,7 +372,7 @@ p
         </nav> -->
 
 </nav>
-	<video style="opacity:0.4"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
+	<video style="opacity:0.4"  id="video"  align="center" autoplay="true"   loop>
 	<source src="video/finalback.m4v" type="video/mp4">
   
     </video>
@@ -403,9 +427,9 @@ p
 <div id="second"  class="row">
    <div class="col-md-8 light" >
    
-  <!--  <br  /> -->
+  
    <br id="scrollhere"/>
-   <!-- <br  /><br  /><br/><br/> -->
+  
 		<p  style="font-size:48px;margin-left:6%;"><span style="color:#FFFFFF;">About Me</span></p>
 		<p style="font-size:20px;margin-left:6%;margin-top:5%;line-height:170%;">I am from New Delhi,India.I graduated from Vellore Institute Of Technology(VIT) with a B.Tech(Bachelors Of Technology) in Computer Science And Engineering.I am presently working as a Software Developer with Sapient Consulting Limited.I am passionate about computer programming.Other than that I love reading about the latest technology news.</p>
 
@@ -414,9 +438,11 @@ p
 	</div>
 
 
-	<!-- <div class="col-md-2 col-sm-2 col-lg-2">
+	<div class="col-md-2 col-sm-2 col-lg-2">
 
-	</div> -->
+	</div>
+
+
 <div class="col-md-2  col-md-offset-2 ">
 		<a href="resume.pdf" target="_blank" class="mybutton" id="toggle" style="margin-top:95%;position: relative;float: right;margin-right:20%;font-size:15px;"  > RESUME
 		</a> 
@@ -424,19 +450,7 @@ p
 
 	</div>
 
-<!-- 
-	<div class="col-md-4 col-sm-4 col-lg-4" >
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
-<button class="mybutton"  > MY BUTTON
-		</button>     </div> -->
       
 
 
@@ -445,7 +459,7 @@ p
 
 	</div>
 
-	<!-- </div> -->
+<!-- 	</div> -->
 
 <div id="third" class="row" >
 
