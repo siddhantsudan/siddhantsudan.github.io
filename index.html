@@ -21,15 +21,73 @@
    
 
 <script>
+$(document).ready(function()
+{
+
+
+
+
+
+});
+
+
+
+
+
+
 $(document).ready(function(){
+
+//  var ua= navigator.userAgent, tem,
+//     M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+//     if(/trident/i.test(M[1])){
+//         tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+//         return 'IE '+(tem[1] || '');
+//     }
+//     if(M[1]=== 'Chrome'){
+//         tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+//         if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+//     }
+//     M= M[2]? [M[1]]: [navigator.appName, '-?'];
+//     if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+// {
+
+//   // document.getElementById("demo").innerHTML =
+//   //   "Name is " + M; +
+//   //   "<br>Code name is " + navigator.appCodeName;
+// var browser=M;
+
+// if(browser=="Chrome")
+// {
+
+// $(window).load(function(){
+//  $("#first").height($( window ).height());
+//       $("#first").width($( document).width());
+// });
+
+// }
+// else
+// {
+//   $(document).ready(function(){
+//  $("#first").height($( window ).height());
+//       $("#first").width($( document).width());
+// });
+// }
+
+ 
+
+
+// }
+
+
+
+ 
   // Add smooth scrolling to all links
 NProgress.configure({ showSpinner: false });
 NProgress.configure({ easing: 'ease', speed: 1100 });
 NProgress.start();
 NProgress.done();
 
-$("#first").height($( window ).height());
-      $("#first").width($( document).width());
+
 
 // $('#first').css('background-color','white');
 
@@ -245,6 +303,8 @@ background:white;
 body
 {
 	overflow-x: hidden;
+ /* margin:0;
+  height: 100%;*/
 	/*overflow-y: hidden;*/
 }
 .seemore
@@ -334,6 +394,7 @@ p
 }
 
 
+
 	</style>
 </head>
 <body>
@@ -345,7 +406,7 @@ p
 
 
 
-<div id="first" class="row animsition">
+<div id="first" class="row animsition" style="height:100vh;">
 
 
 	<!-- <video id="video" class="embed-responsive-item" align="center" autoplay="true"  loop>
