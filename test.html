@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+	 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/social.css">
+
+    <link rel="stylesheet" href="css/reset1.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+ <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<!--   <link rel="stylesheet"  href="css/onepage-scroll.css" />  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="css/hamburgers.css" rel="stylesheet">
+    
+
+
+   <!--   <script id="toremove"  src="js/onepagescroll.js"></script>  -->
+  <script  src="bootstrap/js/bootstrap.js"></script> 
+<!-- 	<script  src="bootstrap/js/bootstrap.js"></script> 
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" /> -->
+<script >
+	
+//        var video = document.getElementsByTagName("video")[0];
+// video.height = $( window ).height();
+// video.width = $( document).width();
+$(document).ready(function(){
+
+$("#ham").hide();
+
+$("#mybutton").on('click', function(event) {
+ $("#ham").slideToggle( "slow" );
+
+ $("#mybutton").toggleClass('is-active');
+        
+
+});
+
+
+
+  $('.vnav li a').on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500,'linear', function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+// $('.vnav').on('click','li', function(){
+//    $(this).addClass('active').siblings().removeClass('active');
+//    // $(this).removeClass('active');
+//    // $(this).addClass('active');
+// });
+
+
+    $('.vnav li a').click(function() {
+        //e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+    var y1=$('#div3').is(':visible');
+
+if (true) {
+
+// $('#three').addClass('active');
+
+}
+
+// onePageScroll(".main", {
+//    sectionContainer: "div.myrow",     // sectionContainer accepts any kind of selector in case you don't want to use section
+//    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+//                                     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+//    animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+//    pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+//    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each pag
+
+//    beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+//    afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+//    loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+//    keyboard: true,                  // You can activate the keyboard controls
+//    responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
+//                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+//                                     // the browser's width is less than 600, the fallback will kick in.
+// });
+
+
+});
+
+
+
+
+</script>
+
+
+<style type="text/css">
+	body
+	{
+		overflow-x:hidden;
+		/*margin: 0;
+		height: 100%;*/
+		overflow-y:hidden;
+	}
+
+*{
+
+margin: 0;
+padding: 0;
+}
+#myvideo
+{
+
+/*	top: 50%;
+	left: 50%;
+	min-height:100%;
+	min-width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	position: absolute;*/
+
+position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+/*    z-index: -100;*/
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+ /*   background: url(polina.jpg) no-repeat;*/
+    background-size: cover; 
+}
+.buttonstyle
+{
+	background:#ff5f2e;
+	color: white;
+	padding:13px 40px 13px 40px;
+	font-size:13px !important;
+	border-radius:10px;
+  letter-spacing:2px;
+
+
+	
+
+}
+.buttonstyle:hover
+{
+	text-decoration: none;
+	background:white;
+	color:#ff5f2e;
+}
+
+.buttonstyle1
+{
+  background:#1574b1;
+  color:   white;
+  padding:13px 40px 13px 40px;
+  font-size:13px !important;
+  border-radius:10px;
+  letter-spacing:2px;
+
+
+
+
+}
+.buttonstyle1:hover
+{
+  text-decoration: none;
+  background: white;
+  color:#1574b1;
+
+}
+.buttonstyle2
+{
+  background:black;
+  color:white;
+  padding:13px 40px 13px 40px;
+  font-size:13px !important;
+  border-radius:10px;
+  letter-spacing:2px;
+
+
+
+
+}
+.buttonstyle2:hover
+{
+  text-decoration: none;
+  background:white;
+  color:black;
+}
+  .light
+  {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+  }
+
+li
+{
+margin-top:2%;
+
+}
+/* 
+ 	.onepage-wrapper {
+    
+    position: static !important; 
+
+
+    }*/
+
+ul.vnav
+{
+list-style:none;
+color: white;
+
+}
+.vnav li a{
+	color: white;
+	font-size:35px;
+	display: block
+}
+.vnav li a:hover{
+outline: none;
+text-decoration: none;
+ -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+    transform: scale(1.2);
+
+}
+
+a.active 
+{
+	color: red !important;
+	text-decoration: none;
+
+}
+
+.nb a:hover
+{
+  /*text-decoration:none;*/
+ 
+  
+    color:black;
+}
+.nb a{
+  color: grey;
+}
+  .nb a:link, .nb a:visited { 
+   
+    text-decoration: none;
+    cursor: auto;
+    outline: none;
+
+}
+.nb a:hover
+{
+   cursor: pointer;
+}
+
+#div3
+{
+	/*display: none;*/
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- <div  class="videocontainer"> -->
+	 <div style="background-color:white;height:40%;z-index:1001;position:fixed;width:100%;opacity:1;" id="ham">
+
+
+   
+ 
+     
+     <div style="margin-top:5%;text-align: center;">
+       
+     
+   <ul style="font-size:27px;color:grey;" class="light nb">
+     <li><a href="index.html">Home</a></li>
+       <li><a href="http://ourcarworld.blogspot.in/" target="_blank">Blog</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+     
+
+       
+   </ul>
+</div>
+<div style="text-align: center;margin-top: 2%;">
+  
+
+   <ul class="social-network social-circle">
+      <li><a href="https://plus.google.com/102314576056879386947" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="https://in.linkedin.com/in/siddhant-sudan-58523a47" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+   </ul>
+</div>
+
+
+   </div>
+
+
+
+	
+
+
+
+	         <button class="hamburger hamburger--collapse" style="z-index:1001;position:fixed;outline: none;right: 0;"  id="mybutton" >
+  <span class="hamburger-box" >
+    <span class="hamburger-inner" ></span>
+  </span>
+</button>
+
+
+
+<div style="position:fixed;top:45%;right:1%;font-size:23px;z-index: 1001;">
+	
+
+
+<ul class="vnav">
+<li><a href="#div1" id="one" >&bull;</a></li>
+<li><a href="#div2" id="two">&bull;</a></li>
+<li><a href="#div3" id="three">&bull;</a></li>
+</ul>
+		
+</div>
+ 
+<!--  	<div class="main"> -->
+
+<div id="div1" style="height:100vh;width: 100%;position:relative;" class="myrow">
+	
+
+<div  style="height:100vh;width:100%;top: 0;left: 0;z-index: -1000;position: relative;" id="video-wrap" class="embed-responsive embed-responsive-16by9" >
+	
+
+    	 <video style="opacity:1" id="myvideo" autoplay="true" class="embed-responsive-item"  loop>
+	<source src="video/myvideo.mp4" type="video/mp4" >
+  
+    </video>
+
+
+
+  </div>   
+
+      <div style="z-index:1000;position: absolute;width: 100%;min-height: 100%;background-color:rgba(0,69,91,0.60);color: white;top:0;left: 0;" class="light">
+
+       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Trade Automation<p>
+  <div style="margin-top:2%;text-align: center;">
+  <a href="proj.html" class=" buttonstyle" id="proj1"  style="align:center;">VIEW PROJECT</a>
+</div>
+  	
+  	  </div>	
+ 
+
+
+ </div> 
+
+
+
+ 		
+
+ 	
+
+
+ <div style="height:100vh;width:100%;position:relative;" id="div2" class="myrow">
+ 	
+
+ <div  style="height:100vh;width:100%;top: 0;left: 0;z-index: -1000;position: absolute;" id="video-wrap" class="embed-responsive embed-responsive-16by9">
+	
+
+    	 <video style="opacity:1" id="myvideo" autoplay="true" class="embed-responsive-item"   loop>
+	<source src="video/busy.mp4" type="video/mp4" >
+  
+    </video>
+
+  
+
+
+    </div>
+
+  	        <div style="z-index:1000 ;position: absolute;width: 100%;min-height: 100%;color: white;top:0;left: 0;" class="light">
+
+       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Invoice Automation<p>
+  <div style="margin-top:2%;text-align: center;">
+  <a href="proj2.html" class=" buttonstyle1" id="proj1"  style="align:center;">VIEW PROJECT</a>
+</div>
+  	
+  	  </div>
+
+
+
+
+  </div>   
+
+
+
+   <div style="height:100vh;width:100%;position: relative;" id="div3" class="myrow">
+ 	
+
+ <div  style="height:100vh;width:100%;top: 0;left: 0;z-index: -1000;position: relative;" id="video-wrap" class="embed-responsive embed-responsive-16by9">
+	
+
+    	 <video style="opacity:1" id="myvideo" autoplay="true"  class="embed-responsive-item" loop>
+	<source src="video/ground.mp4" type="video/mp4" >
+  
+    </video>
+ <!--   <div style="z-index:1000;position: absolute;width: 100%;height: 100%;color: white;top:0;left: 0;background-color:rgba(0,0,0,0.50);">
+  	
+  	<h1>Siddhant3</h1>
+  </div> -->
+
+
+    </div>
+
+ 	        <div style="z-index:1000 ;position: absolute;width: 100%;min-height: 100%;color: white;top:0;left: 0;background-color:rgba(0,0,0,0.50);" class="light">
+
+       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Price Comparison Website<p>
+  <div style="margin-top:2%;text-align: center;">
+  <a href="#div3" class=" buttonstyle2" id="proj1"  style="align:center;">COMING SOON</a>
+</div>
+  	
+  	  </div>
+
+
+
+  </div>  
+
+
+
+
+<!--   </div> -->
+
+  
+
+
+
+
+
+
+<!--   <div style="z-index:1000;position: absolute;width: 100%;min-height: 100%;background-color:rgba(0,69,91,0.60);color: white;">
+  	
+  	<h1>Siddhant2</h1>
+  </div>	 --> 
+
+<!--  </div> -->
+
+
+
+
+<!--   <div style="background-color:purple;height:100vh;width:100%;">
+ 	
+<video style="opacity:1" id="myvideo" autoplay="true"   loop>
+	<source src="video/ground.mp4" type="video/mp4" >
+  
+    </video>
+
+
+ </div> -->
+
+
+
+<!--     </div> -->
+
+    
+
+
+</body>
+</html>
