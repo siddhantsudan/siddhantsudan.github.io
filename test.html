@@ -25,7 +25,9 @@
    <!--   <script id="toremove"  src="js/onepagescroll.js"></script>  -->
   <script  src="bootstrap/js/bootstrap.js"></script> 
 
+<script src="js/withinviewport.js"></script>
 
+<script src="js/jquery.withinviewport.js"></script>
 <!-- 	<script  src="bootstrap/js/bootstrap.js"></script> 
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" /> -->
 <script type="text/javascript">
@@ -34,6 +36,19 @@
 // video.height = $( window ).height();
 // video.width = $( document).width();
 $(document).ready(function(){
+
+
+  var x=$('#div3').is(':within-viewport');
+
+if($('#div1').is(':within-viewport'))
+  $('.vnav li a#one').addClass('active');
+
+if($('#div2').is(':within-viewport'))
+  $('.vnav li a#two').addClass('active');
+
+if($('#div3').is(':within-viewport'))
+  $('.vnav li a#three').addClass('active');
+
 
 $("#ham").hide();
 
@@ -83,13 +98,11 @@ $("#mybutton").on('click', function(event) {
     });
 
 
-    var y1=$('#div3').is(':visible');
+    
 
-if (true) {
 
-// $('#three').addClass('active');
 
-}
+
 
 // onePageScroll(".main", {
 //    sectionContainer: "div.myrow",     // sectionContainer accepts any kind of selector in case you don't want to use section
