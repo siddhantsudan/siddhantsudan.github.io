@@ -38,6 +38,26 @@
 $(document).ready(function(){
 
 
+// $(window).bind("pageshow", function(event) {
+// if (event.originalEvent.persisted) {
+// location.reload();
+// }
+// });
+
+
+
+setTimeout(function() {
+     //  $(".loader").hide();
+      $(".loader").slideUp(800);
+      // $(".loader").fadeToggle(800);
+   }, 3000);
+
+
+ // var $input = $('#refresh');
+
+ //    $input.val() == 'yes' ? location.reload(true) : $input.val('yes');
+
+
   var x=$('#div3').is(':within-viewport');
 
 if($('#div1').is(':within-viewport'))
@@ -79,7 +99,7 @@ $("#mybutton").on('click', function(event) {
       }, 1500,'linear', function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+       // window.location.hash = hash;
       });
     } // End if
   });
@@ -306,7 +326,30 @@ a.active
 </style>
 
 </head>
-<body>
+<body onunload="">
+
+<!--    <input type="hidden" id="refresh" value="no"> -->
+
+   <div class="loader">
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+</div>
+
 
 <!-- <div  class="videocontainer"> -->
 	 <div style="background-color:white;height:40%;z-index:1001;position:fixed;width:100%;opacity:1;" id="ham">
