@@ -1,0 +1,671 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+ <script src="js/jquery-2.1.1.js"></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+  if( !window.jQuery ) document.write('<script src="js/jquery-2.2.1-min.js"><\/script>');
+</script> -->
+
+ <script src="js/modernizr.js"></script> 
+
+ <script id="toremove"  src="js/onepagescroll.js"></script> 
+
+ <script id="here" src="js/animsition.min.js"></script>
+
+ <script  src="js/effectmain.js"></script> 
+ <script src="js/effectmodernizr.js"></script>
+ <!-- Modernizr -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet"  href="css/onepage-scroll.css" /> 
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/animsition.css">
+
+  <link rel="stylesheet" href="css/effectstyle.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/effectreset.css">
+<!--  <link rel="stylesheet" href="ham/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ham/css/style.min.css"> -->
+ <!-- <link href="hamburger/dist/hamburgers.css" rel="stylesheet"> -->
+  <link href="css/hamburgers.css" rel="stylesheet">
+
+  <!-- <link href="css/ham.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/reset1.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/social.css">
+  <!--  <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" /> -->
+
+  <script  src="bootstrap/js/bootstrap.js"></script> 
+  
+
+
+
+
+
+
+
+  <script>
+
+    $(document).ready(function(){
+
+
+// $(".animsition").animsition({
+//     inClass: 'rotate-in',
+//     outClass: 'rotate-out',
+//     inDuration: 1500,
+//     outDuration: 800,
+//     linkElement: '.animsition-link',
+//     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+//     loading: true,
+//     loadingParentElement: 'body', //animsition wrapper element
+//     loadingClass: 'animsition-loading',
+//     loadingInner: '', // e.g '<img src="loading.svg" />'
+//     timeout: false,
+//     timeoutCountdown: 5000,
+//     onLoadEvent: true,
+//     browser: [ 'animation-duration', '-webkit-animation-duration'],
+//     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+//     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+//     overlay : false,
+//     overlayClass : 'animsition-overlay-slide',
+//     overlayParentElement : 'body',
+//     transition: function(url){ window.location.href = url; }
+//   });
+
+
+ $(".modal-close").click(function() {
+        //Do stuff when clicked
+      //  $("#here").before(" <script id='toremove'  src='js/onepagescroll.js'><//script>");
+        $("ul").toggleClass("onepage-pagination");
+         $(".onepage-pagination").show();
+ 
+      
+        
+         
+
+        // $('body').removeClass("cartoon-transition");
+       // $("body").css("background-color","black");
+       // $(".onepage-pagination").show();
+        // $(".onepage-pagination").add();
+    });
+
+//  $("#proj1").click(function()
+//  {
+
+// $(location).attr('href','proj.html#two');
+
+//  });
+
+
+
+
+//  $(".anchor a").click(function() {
+
+  
+        
+//      $(".onepage-pagination").hide();
+//          $("ul").toggleClass("onepage-pagination");
+         
+//       //  $(".onepage-pagination").remove();
+//         //$("#toremove").remove();
+         
+
+//          $('body').removeClass();
+//          $('body').addClass("cartoon-transition");
+
+//     });
+// $(".anchor2 a").click(function() {
+  
+//        // $(".onepage-pagination").remove();
+//        // $("#toremove").remove();
+//         $(".onepage-pagination").hide();
+//          $("ul").toggleClass("onepage-pagination");
+//          $('body').removeClass();
+//          $('body').addClass("gummy-transition");
+
+//     });
+
+// $(".anchor3 a").click(function() {
+  
+//        //  $(".onepage-pagination").remove();
+//        //  $("#toremove").remove();
+//        $(".onepage-pagination").hide();
+//          $("ul").toggleClass("onepage-pagination");
+//          $('body').removeClass();
+//          $('body').addClass("gooey-transition");
+
+//     });
+
+
+
+
+setTimeout(function() {
+     //  $(".loader").hide();
+      $(".loader").slideUp(800);
+      // $(".loader").fadeToggle(800);
+   }, 3000);
+
+
+$("#mybutton").on('click', function(event) {
+ $("#ham").slideToggle( "slow" );
+
+ $("#mybutton").toggleClass('is-active');
+        
+
+});
+
+
+
+
+
+
+
+      
+         $("#ham").hide();
+         
+
+      $("#first").height($( window ).height());
+      $("#first").width($( document).width());
+
+
+      $("#second").height($( window ).height());
+      $("#second").width($( document ).width());
+
+
+      $("#third").height($( window ).height());
+      $("#third").width($( document ).width());
+
+       $("#one").height($( window ).height());
+       $("#one").width($( document).width());
+
+       $("#two").height($( window ).height());
+       $("#two").width($( document).width());
+
+       $("#three").height($( window ).height());
+       $("#three").width($( document).width());
+    // $("#video2").height($( window).height());
+    //    $("#video2").width($( document).width());
+
+
+onePageScroll(".main", {
+   sectionContainer: "div.row",     // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each pag
+
+   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   keyboard: true,                  // You can activate the keyboard controls
+   responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
+                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+                                    // the browser's width is less than 600, the fallback will kick in.
+});
+
+
+    });
+
+//     $(document).ready(function(){
+//   // Add smooth scrolling to all links
+
+//   // alert($('#second').css("width")); 
+
+   
+//   // $("#mynavbutton1").css("margin-left", $(window).width()-100);
+//   // $("#mynavbutton").css("margin-left", $(window).width()-250);
+//   $("a").on('click', function(event) {
+
+// // $('a').removeClass('is-selected');
+// //         $(this).addClass('is-selected');
+
+
+//  // $("#"+$("a").attr("id")).addClass("is-selected");
+//     // Make sure this.hash has a value before overriding default behavior
+//     if (this.hash !== "") {
+//       // Prevent default anchor click behavior
+//       event.preventDefault();
+
+//       // Store hash
+//       var hash = this.hash;
+
+//       // Using jQuery's animate() method to add smooth page scroll
+//       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 2500, function(){
+   
+//         // Add hash (#) to URL when done scrolling (default click behavior)
+//         window.location.hash = hash;
+//       });
+//     } // End if
+//   });
+// });
+
+  </script>
+
+  <style type="text/css">
+
+
+
+
+
+   body{
+    overflow-x:hidden;
+    overflow-y: hidden;
+   
+  }
+  .light
+  {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+  }
+  .vNav {
+    position: fixed;
+    top: 20%;
+    left: 80%;
+    width: 50px;
+    z-index: 9999;
+    list-style-type: none;
+  }
+
+  .vNav ul {
+    position: relative;
+    padding: 3px;
+    padding-left: 35%;
+  }
+
+  .vNav ul li{
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    color: rgb(113,135,133);
+  }
+
+  .vNav a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: white;
+    text-decoration: none;
+  }
+
+  .vNav a:hover{
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  .vNav a.active{
+    border-radius: 50%;
+    background-color: black;
+    text-decoration: none;
+  }
+
+  .label {
+    position: relative;
+    top: -60%;
+    left: -200%;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    color: rgb(113,135,133);
+    display: none;
+  }
+  .mybutton{
+
+  
+}
+#video{
+	
+z-index:1;
+position: absolute;
+height: auto;
+min-width: 100%;
+
+/*	min-width:100%;
+	min-height:100%;
+	width: auto;
+	height: auto;*/
+}
+#one
+{
+	z-index:5;
+	position: relative;
+	/*width:100%;*/
+	/*height:auto;
+	font-size:1em;*/
+
+}
+#two
+{
+	z-index:5;
+	position: relative;
+	
+
+	
+
+}
+#three
+{
+    z-index:5;
+  position: relative;
+}
+#overlay
+{
+	z-index:8;
+	position: relative;
+}
+.buttonstyle
+{
+	background:#ff5f2e;
+	color: white;
+	padding:13px 40px 13px 40px;
+	font-size:13px !important;
+	border-radius:10px;
+  letter-spacing:2px;
+
+
+	
+
+}
+.buttonstyle:hover
+{
+	text-decoration: none;
+	background:white;
+	color:#ff5f2e;
+}
+.buttonstyle1
+{
+  background:#1574b1;
+  color:   white;
+  padding:13px 40px 13px 40px;
+  font-size:13px !important;
+  border-radius:10px;
+  letter-spacing:2px;
+
+
+
+
+}
+.buttonstyle1:hover
+{
+  text-decoration: none;
+  background: white;
+  color:#1574b1;
+}
+
+.buttonstyle2
+{
+  background:black;
+  color:white;
+  padding:13px 40px 13px 40px;
+  font-size:13px !important;
+  border-radius:10px;
+  letter-spacing:2px;
+
+
+
+
+}
+.buttonstyle2:hover
+{
+  text-decoration: none;
+  background:white;
+  color:black;
+}
+li
+{
+margin-top:2%;
+
+}
+li:hover{
+  /*color:black;*/
+ 
+
+}
+a:hover
+{
+  /*text-decoration:none;*/
+ 
+  
+    color:black;
+}
+a{
+  color: grey;
+}
+  a:link, a:visited { 
+   
+    text-decoration: none;
+    cursor: auto;
+    outline: none;
+
+}
+a:hover
+{
+   cursor: pointer;
+}
+
+
+/*.col-md-12
+{
+padding-right:0 !important;
+padding-left:0 !important;
+}*/
+  /* .no-touch #cd-vertical-nav .cd-dot
+  {
+    background-color:yellow !important;
+  }
+
+  .no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white !important;
+}*/
+</style>
+
+</head>
+<body  >
+
+<!-- <main class="cd-main-content"> -->
+
+
+   
+   <div class="loader">
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+</div>
+
+   
+
+ <div style="background-color:white;height:40%;z-index:100;position:fixed;width:100%;opacity:1;" id="ham">
+
+
+   
+ 
+     
+     <div style="margin-top:5%;text-align: center;">
+       
+     
+   <ul style="font-size:27px;color:grey;" class="light ">
+     <li><a href="index.html">Home</a></li>
+       <li><a href="http://ourcarworld.blogspot.in/" target="_blank">Blog</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+     
+
+       
+   </ul>
+</div>
+<div style="text-align: center;margin-top: 2%;">
+  
+
+   <ul class="social-network social-circle">
+      <li><a href="https://plus.google.com/102314576056879386947" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="https://in.linkedin.com/in/siddhant-sudan-58523a47" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+   </ul>
+</div>
+
+
+   </div>
+
+         <button class="hamburger hamburger--collapse" style="margin-top:0;z-index:101;position:fixed;outline: none;margin-left:95%;"  id="mybutton">
+  <span class="hamburger-box" >
+    <span class="hamburger-inner" ></span>
+  </span>
+</button>
+
+   <div class="main" >
+
+<!--   <button class="hamburger hamburger--collapse" style="margin-top:0;z-index:300;position:fixed;outline: none;margin-left:95%;"  id="mybutton">
+  <span class="hamburger-box" >
+    <span class="hamburger-inner" ></span>
+  </span>
+  </button> -->
+
+  <div class="row "   id="first" style="background-color:white;">
+  
+   
+<!-- </button> -->
+
+<div class="embed-responsive embed-responsive-16by9" style="z-index:0;position: relative;">
+	
+	<video style="opacity:1"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
+	<source src="video/myvideo.mp4" type="video/mp4" >
+  
+    </video>
+
+<!-- <div id="overlay" style="z-index:2,position:relative;background-color:blue;">
+	hhhh
+</div> -->
+
+   
+
+<div class="col-md-12 light"  id="one" style="background-color:rgba(0,69,91,0.60);" >
+
+ <!--  <div style="background-color:white;height:30%;z-index:100;position:fixed;width:100%;opacity:1;" id="ham">
+     
+    
+
+   </div> -->
+  <div id="overlay" class="light"  >
+  
+  <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Trade Automation<p>
+  <div style="margin-top:2%;text-align: center;">
+  <a href="proj.html" class=" buttonstyle" id="proj1"  style="z-index:200;position:relative;align:center;">VIEW PROJECT</a>
+</div>
+</div> 
+
+
+
+      
+      </div>
+
+
+
+
+
+</div>
+
+ 
+      
+       </div>
+       <div class="row"  id="second" style="background-color:white;">
+
+               <div class="embed-responsive embed-responsive-16by9" style="z-index:0;position: relative;">
+
+<video style="opacity:1;"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
+	<source src="video/busy.mp4" type="video/mp4" >
+  
+    </video>
+
+
+           <div class="col-md-12 light" id="two" style="background-color:rgba(165,42,42,0);">
+       
+      
+       <div style="margin-top: 20%;">
+         
+         <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Invoice Automation</p>
+       <div style="margin-top:5%;text-align: center;">
+         
+       
+  <a href="proj2.html" class=" buttonstyle1"  style="z-index:200;position:relative;">VIEW PROJECT</a>
+  </div>
+ </div>
+   
+
+          </div>
+  
+</div>
+     </div>
+
+<div class="row" id="third" style="background-color:white;">
+
+              <div class="embed-responsive embed-responsive-16by9" style="z-index:0;position: relative;">
+
+<video style="opacity:1"  id="video" class="embed-responsive-item" align="center" autoplay="true"   loop>
+  <source src="video/ground.mp4" type="video/mp4">
+  
+    </video>
+
+
+           <div class="col-md-12  light" id="three" style="background-color:rgba(0,0,0,0.50);">
+       
+       <!--   <a href="#modal-2" class="cd-modal-trigger"  style="font-size:25px;margin-left:50%;color:white;z-index:200;position:relative;">My Button</a> -->
+       <div style="margin-top: 20%;">
+         
+         <p style="color:white;margin-top:25%;font-size:60px;text-align: center;">Price Comparison Website</p>
+       <div style="margin-top:5%;text-align: center;">
+         
+       
+  <a href="work.html#3"  class=" buttonstyle2"  style="z-index:200;position:relative;">COMING SOON</a>
+  </div>
+ </div>
+   
+
+          </div>
+  
+</div>
+
+
+     </div>
+</div>
+
+
+
+
+
+
+   </body>
+   </html>
