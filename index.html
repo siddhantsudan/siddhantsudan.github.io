@@ -128,7 +128,7 @@ $(".animsition").animsition({
 // NProgress.set(0.4);
 // NProgress.set(0.6);
 // NProgress.set(1.0); 
-   $("#mynav").width($( document ).width());
+   // $("#mynav").width($( document ).width());
    
    
   // $("#second").width($( document ).width());
@@ -162,7 +162,7 @@ $(".animsition").animsition({
 // });
 
 $(window).resize(function() {
-  $("#mynav").width($( window ).width());
+  // $("#mynav").width($( window ).width());
   //  $("#navdiv").css("margin-right", "10px");
 
   // $("#mynavbutton1").css("margin-left", $(window).width()-250);
@@ -417,16 +417,17 @@ p
 
 
 <div>
-<nav class="navbar navbar-default" id="mynav" style="background:transparent;position:fixed;z-index:4;margin-left:13px;  border-bottom: 0px solid #ccc;height:8.5%; 
+<nav class="navbar navbar-default navbar-fixed-top" id="mynav" style="background:transparent;position:fixed;z-index:4; border-bottom: 0px solid #ccc;height:8.5%; 
 ">
 
-<div></div>
-	<ul  style="list-style-type: none;position: absolute;width:25%;margin-top:1%; right:0px;" class="light">
+
+
+	<ul  style="list-style-type: none;position: absolute;margin-top: 1%; right:0;" class="light">
 		<li><a   href="work.html">Work</a></li>
         <li ><a href="resume.pdf" target="_blank">Resume</a></li>
 
 	</ul>
-<div></div>
+
     <!-- <nav class="cl-effect-5 light" style="margin-left:50%;">
           <a href="#"><span data-hover="Seraglio" style="font-size:20px;">Seraglio</span></a>
           <a href="#"><span data-hover="Sumptuous" style="font-size:20px;">Sumptuous</span></a>
