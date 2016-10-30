@@ -254,9 +254,17 @@ z-index: -100;
 transform: translateX(-50%) translateY(-50%);
 -webkit-transform:translateX(-50%) translateY(-50%);
 /*background: url('images/poster.jpg') no-repeat;*/
-background-size: cover;
+/*background-size: cover;*/
  -webkit-transition:1s opacity;
 transition: 1s opacity;
+
+
+background-image:url('img/mainposter.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size:cover; 
+-moz-background-size:cover; 
+-o-background-size:cover;
 	/*position: absolute;*/
 
 
@@ -435,7 +443,7 @@ p
         </nav> -->
 
 </nav>
-	<video style="opacity:0.4"  id="video" style="background-image:url('img/mainposter.jpg');background-repeat: no-repeat;background-size: cover;-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;"  align="center" autoplay="true"   loop>
+	<video style="opacity:0.4"  id="video"   align="center" autoplay="true"   loop>
 	<source src="video/finalback.m4v" type="video/mp4">
   
     </video>
