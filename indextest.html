@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="js/modernizr.custom.js"></script>
+ --><script  src="bootstrap/js/bootstrap.js"></script> 
+ <script  src="js/nprogress.js"></script> 
+ <script src="js/animsition.min.js"></script>
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animsition.css">
+<!-- <link href="css/customcss.css" rel="stylesheet" /> -->
+  
+
+   
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+
+
+
+
+
+});
+
+
+
+
+
+
+$(document).ready(function(){
+
+//  var ua= navigator.userAgent, tem,
+//     M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+//     if(/trident/i.test(M[1])){
+//         tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+//         return 'IE '+(tem[1] || '');
+//     }
+//     if(M[1]=== 'Chrome'){
+//         tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+//         if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+//     }
+//     M= M[2]? [M[1]]: [navigator.appName, '-?'];
+//     if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+// {
+
+//   // document.getElementById("demo").innerHTML =
+//   //   "Name is " + M; +
+//   //   "<br>Code name is " + navigator.appCodeName;
+// var browser=M;
+
+// if(browser=="Chrome")
+// {
+
+// $(window).load(function(){
+//  $("#first").height($( window ).height());
+//       $("#first").width($( document).width());
+// });
+
+// }
+// else
+// {
+//   $(document).ready(function(){
+//  $("#first").height($( window ).height());
+//       $("#first").width($( document).width());
+// });
+// }
+
+ 
+
+
+// }
+
+
+
+ 
+  // Add smooth scrolling to all links
+NProgress.configure({ showSpinner: false });
+NProgress.configure({ easing: 'ease', speed: 1100 });
+NProgress.start();
+NProgress.done();
+
+
+
+// $('#first').css('background-color','white');
+
+
+$('#uparrow').hide();
+
+
+$(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 2000,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: false,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+ // $("#first").height($( window ).height());
+      // $("#third").width($( document).width());
+  // alert($('#second').css("width")); 
+// NProgress.set(0.0); 
+// NProgress.set(0.2);
+// NProgress.inc(2.0); 
+    // Sorta same as .start()
+// NProgress.set(0.4);
+// NProgress.set(0.6);
+// NProgress.set(1.0); 
+   // $("#mynav").width($( document ).width());
+   
+   
+  // $("#second").width($( document ).width());
+  // $("#mynavbutton1").css("margin-left", $(window).width()-100);
+  // $("#mynavbutton").css("margin-left", $(window).width()-250);
+  $("a,#uparrow").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+// $("a").on('click', function(event) {
+// 	$( "#second" ).slideToggle( "slow" );
+// });
+
+$(window).resize(function() {
+  // $("#mynav").width($( window ).width());
+  //  $("#navdiv").css("margin-right", "10px");
+
+  // $("#mynavbutton1").css("margin-left", $(window).width()-250);
+  
+
+});
+
+$(document).ready(function(){       
+
+   var scroll_start = 0;
+   var startchange = $('#second');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', 'white');
+            // $("#second").css('margin-top','8.5%');
+$("#uparrow").show();
+           
+           //alert(b);
+           
+           
+           
+           // $( "#first" ).slideToggle( "slow" );
+         
+       }
+
+
+        else {
+          $('.navbar-default').css('background', 'transparent');
+          $("#uparrow").hide();
+          // var b=parseInt($('#second').css("margin-top").replace("px", ""));
+          // if(b>10)
+          // $("#second").css('margin-top','0');	
+          // if($("#second").css('margin-top')=="8.5%")
+          // $("#second").css('margin-top','-8.5%');
+
+          
+            // if (q==1) {
+            // 	//$("#second").css('margin-top','-8.5%');
+            // 	//q=0;
+            // }
+       }
+   });
+    }
+});
+
+// $( "#svgclick" ).click(function() {
+//   $( "#second" ).slideToggle( "slow" );
+// });
+
+</script>
+	<style type="text/css">
+#first
+{
+	/*background-color:white;
+opacity: 0.3;*/
+
+}
+
+#second
+{
+	background-color:#b31b1b;
+	color:white;
+
+
+	/*position:relative;*/
+
+}
+#third
+{
+	/*background-color:grey;*/
+	/*heighst:800px;*/
+
+
+}
+#video{
+	/*z-index:1;*/
+
+  position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+-webkit-transform:translateX(-50%) translateY(-50%);
+/*background: url('images/poster.jpg') no-repeat;*/
+background-size: cover;
+ -webkit-transition:1s opacity;
+transition: 1s opacity;
+	/*position: absolute;*/
+
+
+/*max-width:100%;
+height: auto;*/
+
+	/*min-width:100%;
+	min-height: 100%;*/
+
+/*	min-width:100%;
+	min-height:100%;
+	width: auto;
+	height: auto;*/
+}
+#one
+{
+	z-index:2;
+	position: relative;
+	width:100%;
+	height:auto;
+	font-size:1em;
+
+}
+.mybutton{
+
+background:white;
+  color: #b31b1b;
+  padding:17px 60px 17px 60px;
+  font-size:15px !important;
+  border-radius:10px;
+  letter-spacing:2px;
+  border:none;
+  outline: none;
+ font-family: 'Open Sans', sans-serif;
+
+}
+
+.mybutton:hover
+{
+  text-decoration: none;
+  background:rgb(179, 27, 27);
+  color:white;
+  border:1px solid white;
+}
+body
+{
+	overflow-x: hidden;
+ /* margin:0;
+  height: 100%;*/
+	/*overflow-y: hidden;*/
+}
+.seemore
+{
+cursor: pointer;
+height: 20px;
+position: absolute;
+bottom: 32px;
+width:100%;
+z-index:105; 
+
+}
+.icon
+{
+-webkit-transition:all .2s;
+width: 100%;position: absolute;text-align: center;
+}
+.icon:hover
+{
+
+	transform: scale(1.2);
+
+}
+li
+{
+	float:left;
+	margin-right:20px;
+	color: #b31b1b;
+	font-size:19px;
+	font-weight:600;
+	padding-top:3%;
+    padding-bottom:3%;
+
+
+
+
+
+}
+li:hover
+{
+  border-top:2px solid #b31b1b;
+	/*background:rgba(255,255,255, 0.2);
+*/   /* padding-top:3%;
+    padding-bottom:3%;*/
+}
+
+li.foot
+{
+  color:white;
+  list-style-type: none;
+}
+li.foot:hover
+{
+  border-top:none;
+}
+
+.light
+  {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+  }
+
+  a:link, a:visited { 
+    color: #b31b1b;
+    text-decoration: none;
+    cursor: auto;
+    outline: none;
+}
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+#uparrow
+{
+-webkit-transition:all .2s;
+height:20px;
+margin-bottom:5%;
+
+}
+#uparrow:hover{
+  transform: scale(1.1);
+}
+p
+{
+  text-align: justify;
+}
+
+
+
+	</style>
+</head>
+<body>
+<!-- <div  class="container"  > -->
+<!-- <div class="container-fluid"> -->
+
+
+
+
+
+
+<div id="first" class="row animsition" style="height:100vh;">
+
+<!-- <img id="video-poster"  src="img/mainposter.jpg " style="height:100vh;opacity:0.4;z-index:-100;position:absolute;" > -->
+	<!-- <video id="video" class="embed-responsive-item" align="center" autoplay="true"  loop>
+	<source src="http://www.sahejvirlocham.com/wp-content/uploads/2016/09/Final-Web-Background.m4v" type="video/mp4">
+  
+    </video> -->
+
+
+<div>
+<nav class="navbar navbar-default navbar-fixed-top" id="mynav" style="background:transparent;position:fixed;z-index:4; border-bottom: 0px solid #ccc;height:8.5%; 
+">
+
+
+
+	<ul  style="list-style-type: none;position: absolute;margin-top: 1%; right:0;" class="light">
+		<li><a   href="work.html">Work</a></li>
+        <li ><a href="resume.pdf" target="_blank">Resume</a></li>
+
+	</ul>
+
+    <!-- <nav class="cl-effect-5 light" style="margin-left:50%;">
+          <a href="#"><span data-hover="Seraglio" style="font-size:20px;">Seraglio</span></a>
+          <a href="#"><span data-hover="Sumptuous" style="font-size:20px;">Sumptuous</span></a>
+         
+        </nav> -->
+
+</nav>
+	<video style="opacity:0.4"  id="video" poster="img/mainposter.jpg" align="center" autoplay="true"   loop>
+
+	<source src="video/finalback1.m4v" type="video/mp4">
+  
+    </video>
+
+
+    	<div id="one" class="col-md-12 light" data-headline-format="text" style="opacity: 1;">
+
+<div>
+  
+
+<h1 style="color: black;font-size:25px;margin-top:15%;margin-left:5%;"> <b>Hi! My name is</b></h1>
+<h1 style="font-size:70px;margin-left:5%;margin-top:5%;color:#b31b1b;"><b>Siddhant Sudan<b></h1>
+<p style="font-size:25px;margin-left:5%;margin-top:3%;">I am Software Developer based out of Gurgaon,India</p>
+</div>
+
+
+</div>
+
+
+<div class="seemore" >
+
+
+<div class="icon" >
+
+
+<a href="#scrollhere">
+	<svg  id="svgclick" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="26px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+
+<g>
+	<polygon points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779 	"></polygon>
+</g>
+
+</svg>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+  
+
+   
+	 
+
+
+
+
+</div>
+
+<div id="second"  class="row">
+   <div class="col-md-8 light" >
+   
+  
+   <br id="scrollhere"/>
+  
+		<p  style="font-size:48px;margin-left:6%;"><span style="color:#FFFFFF;">About Me</span></p>
+		<p style="font-size:20px;margin-left:6%;margin-top:5%;line-height:170%;">I am from New Delhi,India.I graduated from Vellore Institute Of Technology(VIT) with a B.Tech(Bachelors Of Technology) in Computer Science And Engineering.I am presently working as a Software Developer with Sapient Consulting Limited.I am passionate about computer programming.Other than that I love reading about the latest technology news.</p>
+
+		<br/>
+
+	</div>
+
+
+	<div class="col-md-2 col-sm-2 col-lg-2">
+
+	</div>
+
+
+<div class="col-md-2  col-md-offset-2 ">
+		<a href="resume.pdf" target="_blank" class="mybutton" id="toggle" style="margin-top:95%;position: relative;float: right;margin-right:20%;font-size:15px;"  > RESUME
+		</a> 
+
+
+	</div>
+
+
+      
+
+
+
+
+
+	</div>
+
+<!-- 	</div> -->
+
+<div id="third" class="row" >
+
+<div class="row" style="background-color:white;">
+  
+  <h1 style="margin-left:5%;margin-top:7%;" class="light">Work Experience</h1>
+
+</div>
+
+<div class="row"> 
+
+<div class="col-md-2">
+
+<img src="img/saplogo.jpg" width="200" height="200" style="margin-left:25%;margin-top:30%;">
+
+
+
+</div>
+
+<div class="col-md-8 light" style=" background-color:white;margin-left:7%;margin-top:4%;">
+
+<h3 style="font-size:25px;"><b>Associate Technology</b></h3>
+<p style="font-size: 20px;">I work as a Software Developer developing software solutions for some of the most prominent clients in the world.I have worked on automating business processes in order to contain cost.In addition to this I work closely with business analysts and clients to understand the constantly changing project requirements.</p>
+
+
+
+</div>
+
+<div class="col-md-2">
+  
+</div>
+
+</div>
+
+
+<div class="row">
+
+
+
+
+<div class="col-md-2">
+  <img src="img/saplogo.jpg" width="200" height="200" style="margin-left:25%;margin-top:15%;">
+</div>
+
+
+
+<div class="col-md-8 light" style=" background-color:white;margin-left:7%;margin-top:4%;">
+
+<h3 style="font-size:25px;"><b>Trainee Technology</b></h3>
+<p style="font-size: 20px;">Was part of the Global Markets Institute (GMI). I was given training in business
+operations, consulting and technical skills. During my shadow project  I worked with a fortune 100 oil and gas company to automate invoice processing. 
+
+
+</p>
+  
+</div>
+
+
+<div class="col-md-2">
+  
+</div>
+
+
+
+
+
+
+  
+
+</div>
+
+<div class="row">
+
+<div class="col-md-2"  >
+  <img src="img/s.png" width="200" height="50" style="margin-left:26%;margin-top:40%;">
+</div>
+<div class="col-md-8 light" style=" background-color:white;margin-left:7%;margin-bottom:2%;margin-top:3%;">
+  
+  <h3 style="font-size:25px;"><b>Intern</b></h3>
+<p style="font-size: 20px;">Was engaged in debugging and finding bugs in code written in java.</p>
+
+
+
+
+</div>
+<div class="col-md-2" >
+
+</div>
+
+  <div style="bottom: 0;
+       right: 0;
+       position: fixed;margin-left:5%;
+      "  id="uparrow">
+  
+
+<a href="#first" >
+  
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 59.415 59.415" style="enable-background:new 0 0 59.415 59.415;" xml:space="preserve" width="150px" height="80px">
+
+<g>
+  <polygon style="fill:white;" points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312   "/>
+</g>
+
+
+</svg>
+
+</a>
+</div>
+  
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="row" style="background-color: black;" >
+
+<div class="row light" style="background-color:black;">
+  
+  <h1 style="margin-left:5%;margin-top:5%;font-size:60px;color:white;">Skills</h1>
+
+</div>
+
+<div class="row light">
+
+
+<div class="col-md-3">
+<h1 style="color:white;margin-left:69%;font-family: 'Wendy One', sans-serif;"><b>HTML</b></h1>
+<img src="img/html5logo.png" width="150" height="150" style="margin-left:60%;margin-top:1%;">
+</div>
+
+<div class="col-md-3">
+<h1 style="color:white;margin-left:59%;font-family: 'Wendy One', sans-serif;">CSS</h1>
+<img src="img/c.png" width="150" height="150" style="margin-left:45%;margin-top:1%;">
+</div>
+
+ <div class="col-md-3">
+  <img src="img/cpro.png" width="150" height="150" style="margin-left:20%;margin-top:25%;">
+</div> 
+
+<div class="col-md-3">
+  <img src="img/jq.jpg" width="450" height="350" style="margin-left:-40%;margin-top:-10%;">
+</div> 
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-4">
+  <img src="img/csharp.png" width="150" height="150" style="margin-left:40%;margin-top:-5%;">
+</div> 
+
+ <div class="col-md-4">
+  <img src="img/rx.png" width="370" height="100" style="margin-left:10%;margin-top:0%;">
+</div> 
+
+ <div class="col-md-4">
+  <img src="img/sq.png" width="270" height="140" style="margin-left:25%;margin-top:-5%;">
+</div> 
+
+
+</div>
+
+<!-- <div class="row">
+
+   <img src="img/rx.png" width="370" height="100" style="margin-left:25%;margin-top:0%;">
+
+
+</div>
+ -->
+  
+
+</div>
+
+
+
+<div class="row light" style="background-color:black;color:white;">
+
+<p style="margin-left:42%;font-size:17px;margin-top:7%;">&copy; Siddhant Sudan, 2016 </p>
+<!-- <ul > 
+  <li class="foot">Email</li>
+  <li class="foot">|</li>
+  <li class="foot">LinkedIn</li>
+
+</ul> -->
+<div style="font-size:20px;margin-left:43.5%;">
+  <a href="mailto:siddhant.sudan@gmail.com"><span style="color:white;">Email</span></a>
+  <a><span style="color:white;">|</span></a>
+ <a href="https://in.linkedin.com/in/siddhant-sudan-58523a47"><span style="color:white;">LinkedIn</span> </a>
+</div>
+  
+</div>
+     
+
+
+ <!-- </div> -->
+
+<!-- </div> -->
+
+
+<!-- <div class="row">
+	<div class="col-md-12 col-sm-12 col-lg-12"><video id="video"  align="center" autoplay="true"  loop>
+	<source src="http://www.sahejvirlocham.com/wp-content/uploads/2016/09/Final-Web-Background.m4v" type="video/mp4"> -->
+
+<!-- </video></div> -->
+<!-- </div> -->
+
+</body>
+</html>
