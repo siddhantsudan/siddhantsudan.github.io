@@ -435,11 +435,23 @@ p
         </nav> -->
 
 </nav>
-	<video style="opacity:0.4"  id="video" poster="img/mainposter.jpg" align="center" autoplay="true"   loop>
+	<!--[if IE]><!-- THIS TARGETS ONLY IE BROWSERS -->
+<video style="opacity:0.4"  id="video" poster="img/mainposter.jpg" align="center" autoplay="true"   loop>
 
 	<source src="video/finalback.m4v" type="video/mp4">
   
     </video>
+<![endif]--><!-- ENDS TARGET FOR IE BROWSERS -->
+	
+	<!--[if !IE]><!--><!-- THIS TARGETS ALL BROWSERS EXCEPT FOR IE -->
+<video style="opacity:0.4"  id="video"  align="center" autoplay="true"   loop>
+
+	<source src="video/finalback.m4v" type="video/mp4">
+  
+    </video>
+<!--<![endif]--><!--><!-- ENDS TARGET OF ALL BROWSERS EXCEPT IE -->
+	
+	
 
 
     	<div id="one" class="col-md-12 light" data-headline-format="text" style="opacity: 1;">
