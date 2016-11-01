@@ -38,6 +38,11 @@ $(document).ready(function()
 
 $(document).ready(function(){
 
+
+  $(window).load(function(){
+        $('#myModal').modal('show');
+    });
+
 //  var ua= navigator.userAgent, tem,
 //     M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
 //     if(/trident/i.test(M[1])){
@@ -407,7 +412,25 @@ p
 <body>
 <!-- <div  class="container"  > -->
 <!-- <div class="container-fluid"> -->
-
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Browser Compatibility</h4>
+        </div>
+        <div class="modal-body">
+          <p>Use latest version of IE,Safari,Chrome or Firefox otherwise some features might not work.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 
 
