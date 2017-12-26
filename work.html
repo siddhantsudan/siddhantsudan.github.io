@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -86,6 +87,8 @@ $("#mybutton").on('click', function(event) {
 
   $('.vnav li a').on('click', function(event) {
 
+    // window.clearInterval(tm);
+
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -148,6 +151,30 @@ $("#mybutton").on('click', function(event) {
 
 
 
+          function displayNextImage() {
+            
+            document.getElementById(images[x]).click();
+            if(x==0)
+            {
+              window.clearInterval(tm);
+            }
+            x=(x+1)%3;
+
+             
+          }
+
+         
+
+          function startTimer() {
+            tm=window.setInterval(displayNextImage,5000);
+              // setInterval(displayNextImage, 5000);
+          }
+
+          var images = [], x =1,tm;
+          images[0] = "one";
+          images[1] = "two";
+          images[2] = "three";
+    
 
 </script>
 
@@ -159,6 +186,7 @@ $("#mybutton").on('click', function(event) {
 		/*margin: 0;
 		height: 100%;*/
 		overflow-y:hidden;
+    /*overflow: scroll;*/
 	}
 
 *{
@@ -338,7 +366,7 @@ a.active
 
 </script>
 </head>
-<body onunload="">
+<body onunload="" onload="startTimer()">
 
 <!--    <input type="hidden" id="refresh" value="no"> -->
 
@@ -440,9 +468,9 @@ a.active
 
       <div style="z-index:1000;position: absolute;width: 100%;min-height: 100%;background-color:rgba(0,69,91,0.60);color: white;top:0;left: 0;" class="light">
 
-       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Trade Automation<p>
+       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Movie/Music Recommendation <p>
   <div style="margin-top:2%;text-align: center;">
-  <a href="proj.html" class=" buttonstyle" id="proj1"  style="align:center;">VIEW PROJECT</a>
+  <a href="https://github.com/siddhantsudan/Movie-Music-Recommendation" class=" buttonstyle" id="proj1"  style="align:center;">VIEW PROJECT</a>
 </div>
   	
   	  </div>	
@@ -476,9 +504,9 @@ a.active
 
   	        <div style="z-index:1000 ;position: absolute;width: 100%;min-height: 100%;color: white;top:0;left: 0;" class="light">
 
-       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Invoice Automation<p>
+       <p style="color:white;margin-top:25%;font-size:60px;text-align:center;">Spam Detection using Support Vector Machine<p>
   <div style="margin-top:2%;text-align: center;">
-  <a href="proj2.html" class=" buttonstyle1" id="proj1"  style="align:center;">VIEW PROJECT</a>
+  <a href="https://github.com/siddhantsudan/SpamDetectionSVM" class=" buttonstyle1" id="proj1"  style="align:center;">VIEW PROJECT</a>
 </div>
   	
   	  </div>
